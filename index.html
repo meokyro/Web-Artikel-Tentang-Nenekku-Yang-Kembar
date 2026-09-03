@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jejak Kasih Kembar Identik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #ECE3D0;
+    --paper-deep: #E2D6BC;
+    --ink: #2C2418;
+    --ink-soft: #5A5040;
+    --clay: #7A3B2E;
+    --clay-deep: #5C2C22;
+    --tape: #C9BFA0;
+    --line: rgba(44,36,24,0.18);
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(122,59,46,0.05), transparent 40%),
+      radial-gradient(circle at 85% 75%, rgba(122,59,46,0.05), transparent 40%);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* Header */
+  header{
+    padding:72px 0 40px;
+    position:relative;
+  }
+
+  .kicker{
+    font-family:'Karla', sans-serif;
+    font-size:14px;
+    font-weight:500;
+    color:var(--clay-deep);
+    letter-spacing:0.02em;
+    margin:0 0 18px;
+  }
+
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:clamp(34px, 6vw, 52px);
+    line-height:1.12;
+    letter-spacing:-0.01em;
+    margin:0 0 20px;
+    max-width:11ch;
+  }
+
+  .lede{
+    font-size:18px;
+    color:var(--ink-soft);
+    max-width:52ch;
+    margin:0;
+  }
+
+  /* Decorative twin motif */
+  .twin-mark{
+    position:absolute;
+    top:64px;
+    right:24px;
+    width:64px;
+    height:64px;
+  }
+  @media (max-width:600px){ .twin-mark{ display:none; } }
+
+  /* Divider like a torn photo edge */
+  .divider{
+    height:1px;
+    background:var(--line);
+    margin:8px 0 48px;
+  }
+
+  /* Article body */
+  article p{
+    font-size:18px;
+    margin:0 0 26px;
+    max-width:62ch;
+  }
+
+  article p:first-of-type::first-letter{
+    font-family:'Fraunces', serif;
+    font-size:60px;
+    font-weight:500;
+    float:left;
+    line-height:0.8;
+    padding:8px 8px 0 0;
+    color:var(--clay);
+  }
+
+  /* Pull quote styled like a caption pinned with tape */
+  .pin-quote{
+    position:relative;
+    margin:44px 0 44px 0;
+    padding:22px 26px;
+    background:var(--paper-deep);
+    border:1px solid var(--line);
+    max-width:56ch;
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:21px;
+    line-height:1.5;
+    color:var(--clay-deep);
+    transform:rotate(-0.6deg);
+  }
+
+  .pin-quote::before{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:36px;
+    width:64px;
+    height:22px;
+    background:var(--tape);
+    opacity:0.75;
+    transform:rotate(-3deg);
+  }
+
+  /* Section label used once, as a genuine marker of a new scene, not decoration */
+  .scene{
+    font-family:'Karla', sans-serif;
+    font-size:13px;
+    font-weight:700;
+    color:var(--clay);
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    margin:56px 0 18px;
+  }
+
+  footer{
+    margin-top:64px;
+    padding:32px 0 72px;
+    border-top:1px solid var(--line);
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  footer .signoff{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+
+  ::selection{
+    background: var(--clay);
+    color: var(--paper);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <svg class="twin-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="24" cy="24" r="14" stroke="#7A3B2E" stroke-width="1.4" opacity="0.55"/>
+      <circle cx="40" cy="40" r="14" stroke="#7A3B2E" stroke-width="1.4" opacity="0.85"/>
+    </svg>
+    <p class="kicker">Cerita Keluarga</p>
+    <h1>Jejak Kasih Kembar Identik</h1>
+    <p class="lede">Kisah Nenek dan saudara kembarnya, dari wajah yang serupa sampai kebiasaan yang tanpa sadar selalu selaras.</p>
+  </header>
+
+  <div class="divider"></div>
+
+  <article>
+    <p>Nenek punya saudara kembar identik. Kemiripan wajah mereka sudah terlihat sejak lahir, dan sampai sekarang orang masih sering keliru membedakan siapa siapa.</p>
+
+    <p>Yang paling sering salah mengenali justru cucu-cucu mereka sendiri, terutama saat kumpul keluarga di rumah buyut. Wajar saja — wajah mereka nyaris sama persis. Setiap kali ada cucu yang salah menyapa, yang terjadi bukan kecanggungan, tapi tawa. Nenek dan saudaranya sudah terbiasa, dan kesalahan itu malah jadi bahan candaan tersendiri di keluarga.</p>
+
+    <div class="pin-quote">
+      "Kadang aku sendiri baru sadar salah manggil setelah orangnya senyum-senyum aneh."
+    </div>
+
+    <p class="scene">Bukan cuma wajah</p>
+
+    <p>Yang menarik, kemiripan mereka tidak berhenti di wajah. Beberapa kali mereka datang ke acara keluarga memakai baju dengan model atau warna yang sama, padahal tidak janjian sebelumnya. Entah kebetulan, entah karena selera yang memang mirip sejak kecil — tapi ini terjadi cukup sering sampai jadi bahan obrolan tersendiri di antara sepupu-sepupu.</p>
+
+    <p>Rumah buyut sendiri jadi tempat di mana cerita-cerita seperti ini terus hidup. Dari generasi buyut, nenek, ibu, sampai cucu, semua berkumpul di sana, dan momen-momen kecil seperti salah mengenali kembar identik ini yang akhirnya diceritakan ulang setiap kali keluarga berkumpul.</p>
+
+    <p>Cerita Nenek dan saudara kembarnya ini sederhana, tapi ada sesuatu yang hangat di dalamnya: bagaimana sebuah keluarga besar bisa tetap dekat justru lewat hal-hal kecil dan lucu semacam ini.</p>
+  </article>
+
+  <footer>
+    <p class="signoff">Ditulis untuk diwariskan ke cucu-cucu berikutnya.</p>
+    <p>Kisah keluarga, dituliskan apa adanya.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
